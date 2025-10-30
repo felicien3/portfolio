@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Keffa, a web developer specializing in modern, responsive websites and web apps.">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Nav menu -->
+    <div class="container">
+        <nav id="header" aria-label="Primary">
+            <div class="nav-logo">
+                <p class="nav-name">NF</p>
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav-menu-list">
+                     <li class="nav-list">
+                        <a href="#home" class="nav-link active-link">Home</a>
+                        <div class="circle"></div>
+                     </li>
+                     <li class="nav-list">
+                        <a href="#about" class="nav-link">About</a>
+                        <div class="circle"></div>
+                     </li>
+                     <li class="nav-list">
+                        <a href="#projects" class="nav-link">Projects</a>
+                        <div class="circle"></div>
+                     </li>
+                     <li class="nav-list">
+                        <a href="#contact" class="nav-link">Contact</a>
+                        <div class="circle"></div>
+                     </li>
+                </ul>
+            </div>
+            <!-- Dark mode -->
+            <div class="mode">
+                <div class="moon-sun" id="toggle-switch">
+                    <i class="fa fa-moon" id="moon"></i>
+                    <i class="fa fa-sun" id="sun"></i>
+                </div>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+
+        <!-- main -->
+        <main class="wrapper">
+            <section class="featured-box" id="home">
+                <div class="featured-text">
+                    <div class="hello">
+                        <p>Hello I'm</p>
+                    </div>
+                    <div class="featured-name">
+                        <span class="typedText"></span>
+                    </div>
+                    <div class="text-info">
+                        <p>My name is Keffa! I'm a web developer with 2+ years of experience</p>
+                    </div>
+                    <div class="text-btn">
+                        <button class="btn hire-btn">Hire Me</button>
+                        <button class="btn">Download CV <i class="fa fa-file" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="social-icons">
+                        <div class="icon-circle"></div>
+                        <div class="icon"><a aria-label="Instagram" href="#" target="_blank" rel="noopener"><i class='bx bxl-instagram'></i></a></div>
+                        <div class="icon"><a aria-label="Facebook" href="#" target="_blank" rel="noopener"><i class='bx bxl-facebook'></i></a></div>
+                        <div class="icon"><a aria-label="LinkedIn" href="https://www.linkedin.com/in/felicien-niyonsenga-a30008299/?original_referer=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2F&originalSubdomain=rw" target="_blank" rel="noopener"><i class='bx bxl-linkedin'></i></a></div>
+                        <div class="icon"><a aria-label="Twitter" href="#" target="_blank" rel="noopener"><i class='bx bxl-twitter'></i></a></div>
+                    </div>
+                </div>
+                <div class="featured-image">
+                    <div class="image">
+                        <img src="me.jpg" alt="Profile photo">
+                    </div>
+                </div>
+            </section>
+            <!-- About box -->
+            <section class="section" id="about">
+                <div class="top-header">
+                    <h1>About me</h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="about-info">
+                            <figure class="about-me">
+                                <figcaption>
+                                    <img src="" class="profile" alt="Profile avatar" />
+                                    <h2>Web developer</h2>
+                                    <p>My name is Keffa! I'm a web developer with 2+ years of experience</p>
+                                </figcaption>
+                            </figure>
+                            <button class="about-me-btn">Hire Me</button>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div class="skill-box">
+                            <span class="title">HTML</span>
+                            <div class="skill-bar">
+                                <span class="skill-per html">
+                                    <span class="tooltip">80%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">CSS</span>
+                            <div class="skill-bar">
+                                <span class="skill-per css">
+                                    <span class="tooltip">80%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">Python</span>
+                            <div class="skill-bar">
+                                <span class="skill-per python">
+                                    <span class="tooltip">70%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">JavaScript</span>
+                            <div class="skill-bar">
+                                <span class="skill-per javascript">
+                                    <span class="tooltip">60%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">PHP</span>
+                            <div class="skill-bar">
+                                <span class="skill-per php">
+                                    <span class="tooltip">50%</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!------ Project box ------>
+            <section class="section" id="projects">
+                <div class="top-header">
+                    <h1>Projects</h1>
+                </div>
+                <div class="project-container">
+                    <div class="project-box">
+                        <i class='bx bx-briefcase-alt-2' ></i>
+                        <h3>Completed</h3>
+                        <label>20+ Finished</label>
+                    </div>
+                    <div class="project-box">
+                        <i class='bx bxs-user-plus'></i>
+                        <h3>Client</h3>
+                        <label>70+ Happy client</label>
+                    </div>
+                    <div class="project-box">
+                        <i class='bx bx-award'></i>
+                        <h3>Experience</h3>
+                        <label>2+ Years in web development</label>
+                    </div>
+                </div>
+            </section>
+            <!------ Contact box  ------->
+            <section class="section" id="contact">
+                <div class="top-header">
+                    <h1>Let's Work Together</h1>
+                    <span>Do you have a project in your mind, contact me here</span>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="contact-info">
+                            <h2>Find me <i class="uil uil-corner-right-down"></i></h2>
+                            <p><i class='bx bx-envelope' ></i>Email: <a href="mailto:niyonsengafelicien11@gmail.com">niyonsengafelicien11@gmail.com</a></p>
+                            <p><i class='bx bxs-phone-call' ></i>Phone: <a href="tel:+250782076805">+250 782 076 805</a></p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-control">
+                            <div class="form-inputs">
+                                <input type="text" class="input-field" placeholder="Your Name">
+                                <input type="email" class="input-field" placeholder="Your Email">
+                            </div>
+                            <div class="text-area">
+                                <input type="text" class="input-subject" placeholder="Subject">
+                                <textarea placeholder="Message"></textarea>
+                            </div>
+                            <div class="form-button">
+                                <button class="btn">Send <i class='bx bxs-send' ></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!------ Footer  ------->
+        <footer>
+            <div class="middle-footer">
+                <ul class="footer-menu">
+                    <li class="footer-menu-list">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="footer-menu-list">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="footer-menu-list">
+                        <a href="#projects">Project</a>
+                    </li>
+                    <li class="footer-menu-list">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-social-icons">
+                <div class="icon-circle"></div>
+                <div class="icon"><a aria-label="Instagram" href="#" target="_blank" rel="noopener"><i class='bx bxl-instagram'></i></a></div>
+                <div class="icon"><a aria-label="Facebook" href="#" target="_blank" rel="noopener"><i class='bx bxl-facebook' ></i></a></div>
+                <div class="icon"><a aria-label="LinkedIn" href="https://www.linkedin.com/in/felicien-niyonsenga-a30008299/?original_referer=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2F&originalSubdomain=rw" target="_blank" rel="noopener"><i class='bx bxl-linkedin' ></i></a></div>
+                <div class="icon"><a aria-label="Twitter" href="#" target="_blank" rel="noopener"><i class='bx bxl-twitter' ></i></a></div>
+            </div> 
+            <div class="bottom-footer">
+                <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Keffa</a>- All rights 2023</p>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
