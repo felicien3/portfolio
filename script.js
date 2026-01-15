@@ -12,6 +12,8 @@ const downloadCVButtons = document.querySelectorAll(
   "#downloadCV, #downloadCVBottom"
 );
 const contactForm = document.getElementById("contactForm");
+const whatsappFloat = document.getElementById("whatsappFloat");
+const whatsappTooltip = document.getElementById("whatsappTooltip");
 
 // Language Switching
 function switchLanguage(lang) {
@@ -53,6 +55,12 @@ function switchLanguage(lang) {
       }
     }
   });
+
+  // Update WhatsApp tooltip
+  if (whatsappTooltip) {
+    whatsappTooltip.textContent =
+      lang === "en" ? "Chat on WhatsApp" : "Vuga kuri WhatsApp";
+  }
 }
 
 // Theme Toggle
@@ -160,7 +168,8 @@ function generateCVText() {
 IT Professional & Software Developer
 Kigali City, Nyarugenge District, Rwanda
 +250 782 076 805 | +250 734 525 852
-niyonsengafelicien11@gmail.com
+WhatsApp: https://wa.me/250782076805
+Email: niyonsengafelicien11@gmail.com
 
 EDUCATION
 ---------
@@ -233,6 +242,18 @@ DECLARATION
 I, Felicien Niyonsenga, declare that all information provided in this CV is accurate and complete to the best of my knowledge.`;
 }
 
+// WhatsApp Hover Effects
+function setupWhatsAppHover() {
+  if (whatsappFloat) {
+    whatsappFloat.addEventListener("mouseenter", () => {
+      if (whatsappTooltip) {
+        whatsappTooltip.textContent =
+          currentLang === "en" ? "Chat on WhatsApp" : "Vuga kuri WhatsApp";
+      }
+    });
+  }
+}
+
 // Initialize
 function init() {
   // Set initial theme
@@ -252,6 +273,9 @@ function init() {
   contactForm.addEventListener("submit", handleFormSubmit);
   navLinks.forEach((link) => link.addEventListener("click", smoothScroll));
 
+  // Setup WhatsApp
+  setupWhatsAppHover();
+
   window.addEventListener("scroll", setActiveLink);
 
   // Set initial active link
@@ -260,14 +284,3 @@ function init() {
 
 // Initialize when DOM is loaded
 document.addEventListener("DOMContentLoaded", init);
-
-// Update downloadCV function to use actual PDF
-function downloadCV() {
-  // Link to actual PDF file
-  const link = document.createElement("a");
-  link.href = "assets/downloads/Felicien_Niyonsenga_CV.pdf";
-  link.download = "Felicien_Niyonsenga_CV.pdf";
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-}

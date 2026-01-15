@@ -70,12 +70,17 @@ const translations = {
     "contact.formTitle": "Send Message",
     "contact.phone": "Phone",
     "contact.email": "Email",
+    "contact.whatsapp": "WhatsApp",
     "contact.location": "Location",
     "contact.name": "Your Name",
     "contact.subject": "Subject",
     "contact.message": "Message",
     "contact.sendBtn": "Send Message",
     "contact.downloadCV": "Download Complete CV (PDF)",
+    "contact.whatsappDirect": "Quick WhatsApp Messages",
+    "contact.whatsappGeneral": "General",
+    "contact.whatsappJob": "Job",
+    "contact.whatsappProject": "Project",
 
     // Footer
     "footer.description":
@@ -154,12 +159,17 @@ const translations = {
     "contact.formTitle": "Ohereza ubutumwa",
     "contact.phone": "Telefone",
     "contact.email": "Imeyili",
+    "contact.whatsapp": "WhatsApp",
     "contact.location": "Aho ntubariza",
     "contact.name": "Amazina yawe",
     "contact.subject": "Ingingo",
     "contact.message": "Ubutumwa",
     "contact.sendBtn": "Ohereza ubutumwa",
     "contact.downloadCV": "Kuramo CV yuzuye (PDF)",
+    "contact.whatsappDirect": "Ubutumwa bwa WhatsApp",
+    "contact.whatsappGeneral": "Ibibazo",
+    "contact.whatsappJob": "Akazi",
+    "contact.whatsappProject": "Igikorwa",
 
     // Footer
     "footer.description":

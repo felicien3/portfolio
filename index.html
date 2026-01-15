@@ -124,6 +124,13 @@
           <a href="tel:+250782076805" class="social-link">
             <i class="fas fa-phone"></i>
           </a>
+          <a
+            href="https://wa.me/250782076805"
+            target="_blank"
+            class="social-link"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
           <a href="#" class="social-link">
             <i class="fab fa-github"></i>
           </a>
@@ -135,7 +142,32 @@
           <div class="profile-image">
             <!-- Replace with your actual profile image -->
             <img src="assets/images/profile.jpg" alt="Felicien Niyonsenga" />
+
+            <!-- Corner accents -->
+            <div class="corner-accent tl"></div>
+            <div class="corner-accent tr"></div>
+            <div class="corner-accent bl"></div>
+            <div class="corner-accent br"></div>
+
+            <!-- Overlay elements -->
+            <div class="profile-overlay"></div>
+
+            <div class="contact-overlay">
+              <h4>Contact Information</h4>
+              <p><i class="fas fa-phone"></i> +250 782 076 805</p>
+              <p><i class="fab fa-whatsapp"></i> Available on WhatsApp</p>
+              <p><i class="fas fa-envelope"></i> IT Specialist</p>
+            </div>
           </div>
+
+          <!-- Status and Tech Badges -->
+          <div class="profile-status" id="profileStatus">
+            <i class="fas fa-circle"></i>
+            <span data-key="profile.status">Available</span>
+          </div>
+
+          <!-- Optional: Frame around image -->
+          <div class="image-frame"></div>
         </div>
       </div>
     </section>
@@ -409,6 +441,20 @@
                 </div>
               </div>
 
+              <div class="contact-detail whatsapp-contact">
+                <div class="contact-icon">
+                  <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="contact-text">
+                  <h4 data-key="contact.whatsapp">WhatsApp</h4>
+                  <p>
+                    <a href="https://wa.me/250782076805" target="_blank"
+                      >+250 782 076 805</a
+                    >
+                  </p>
+                </div>
+              </div>
+
               <div class="contact-detail">
                 <div class="contact-icon">
                   <i class="fas fa-envelope"></i>
@@ -434,6 +480,37 @@
               </div>
             </div>
 
+            <!-- WhatsApp Quick Links -->
+            <div class="whatsapp-direct">
+              <h4 data-key="contact.whatsappDirect">Quick WhatsApp Messages</h4>
+              <div class="whatsapp-options">
+                <a
+                  href="https://wa.me/250782076805?text=Hello%20Felicien%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect."
+                  target="_blank"
+                  class="btn-whatsapp-small"
+                >
+                  <i class="fab fa-whatsapp"></i>
+                  <span data-key="contact.whatsappGeneral">General</span>
+                </a>
+                <a
+                  href="https://wa.me/250782076805?text=Hello%20Felicien%2C%20I%20have%20a%20job%20opportunity%20I%20would%20like%20to%20discuss."
+                  target="_blank"
+                  class="btn-whatsapp-small"
+                >
+                  <i class="fab fa-whatsapp"></i>
+                  <span data-key="contact.whatsappJob">Job</span>
+                </a>
+                <a
+                  href="https://wa.me/250782076805?text=Hello%20Felicien%2C%20I%20need%20help%20with%20a%20project."
+                  target="_blank"
+                  class="btn-whatsapp-small"
+                >
+                  <i class="fab fa-whatsapp"></i>
+                  <span data-key="contact.whatsappProject">Project</span>
+                </a>
+              </div>
+            </div>
+
             <div class="social-links">
               <a
                 href="https://www.linkedin.com/in/felicien-niyonsenga-a30008299/"
@@ -450,6 +527,13 @@
               </a>
               <a href="tel:+250782076805" class="social-link">
                 <i class="fas fa-phone"></i>
+              </a>
+              <a
+                href="https://wa.me/250782076805"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-whatsapp"></i>
               </a>
               <a href="#" class="social-link">
                 <i class="fab fa-github"></i>
@@ -562,6 +646,10 @@
             <p><i class="fas fa-map-marker-alt"></i> Kigali City, Rwanda</p>
             <p><i class="fas fa-phone"></i> +250 782 076 805</p>
             <p>
+              <i class="fab fa-whatsapp"></i>
+              <a href="https://wa.me/250782076805" target="_blank">WhatsApp</a>
+            </p>
+            <p>
               <i class="fas fa-envelope"></i> niyonsengafelicien11@gmail.com
             </p>
           </div>
@@ -574,6 +662,19 @@
         </div>
       </div>
     </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a
+      href="https://wa.me/250782076805"
+      target="_blank"
+      class="whatsapp-float"
+      aria-label="Chat on WhatsApp"
+      id="whatsappFloat"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <div class="whatsapp-tooltip" id="whatsappTooltip">Chat on WhatsApp</div>
 
     <script src="translations.js"></script>
     <script src="script.js"></script>
