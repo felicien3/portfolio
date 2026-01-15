@@ -1,235 +1,581 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Keffa, a web developer specializing in modern, responsive websites and web apps.">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <!-- Nav menu -->
-    <div class="container">
-        <nav id="header" aria-label="Primary">
-            <div class="nav-logo">
-                <p class="nav-name">NF</p>
-            </div>
-            <div class="nav-menu" id="myNavMenu">
-                <ul class="nav-menu-list">
-                     <li class="nav-list">
-                        <a href="#home" class="nav-link active-link">Home</a>
-                        <div class="circle"></div>
-                     </li>
-                     <li class="nav-list">
-                        <a href="#about" class="nav-link">About</a>
-                        <div class="circle"></div>
-                     </li>
-                     <li class="nav-list">
-                        <a href="#projects" class="nav-link">Projects</a>
-                        <div class="circle"></div>
-                     </li>
-                     <li class="nav-list">
-                        <a href="#contact" class="nav-link">Contact</a>
-                        <div class="circle"></div>
-                     </li>
-                </ul>
-            </div>
-            <!-- Dark mode -->
-            <div class="mode">
-                <div class="moon-sun" id="toggle-switch">
-                    <i class="fa fa-moon" id="moon"></i>
-                    <i class="fa fa-sun" id="sun"></i>
-                </div>
-            </div>
-            <div class="nav-menu-btn">
-                <i class="bx bx-menu" onclick="myMenuFunction()"></i>
-            </div>
-        </nav>
-
-        <!-- main -->
-        <main class="wrapper">
-            <section class="featured-box" id="home">
-                <div class="featured-text">
-                    <div class="hello">
-                        <p>Hello I'm</p>
-                    </div>
-                    <div class="featured-name">
-                        <span class="typedText"></span>
-                    </div>
-                    <div class="text-info">
-                        <p>My name is Keffa! I'm a web developer with 2+ years of experience</p>
-                    </div>
-                    <div class="text-btn">
-                        <button class="btn hire-btn">Hire Me</button>
-                        <button class="btn">Download CV <i class="fa fa-file" aria-hidden="true"></i></button>
-                    </div>
-                    <div class="social-icons">
-                        <div class="icon-circle"></div>
-                        <div class="icon"><a aria-label="Instagram" href="#" target="_blank" rel="noopener"><i class='bx bxl-instagram'></i></a></div>
-                        <div class="icon"><a aria-label="Facebook" href="#" target="_blank" rel="noopener"><i class='bx bxl-facebook'></i></a></div>
-                        <div class="icon"><a aria-label="LinkedIn" href="https://www.linkedin.com/in/felicien-niyonsenga-a30008299/?original_referer=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2F&originalSubdomain=rw" target="_blank" rel="noopener"><i class='bx bxl-linkedin'></i></a></div>
-                        <div class="icon"><a aria-label="Twitter" href="#" target="_blank" rel="noopener"><i class='bx bxl-twitter'></i></a></div>
-                    </div>
-                </div>
-                <div class="featured-image">
-                    <div class="image">
-                        <img src="me.jpg" alt="Profile photo">
-                    </div>
-                </div>
-            </section>
-            <!-- About box -->
-            <section class="section" id="about">
-                <div class="top-header">
-                    <h1>About me</h1>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="about-info">
-                            <figure class="about-me">
-                                <figcaption>
-                                    <img src="" class="profile" alt="Profile avatar" />
-                                    <h2>Web developer</h2>
-                                    <p>My name is Keffa! I'm a web developer with 2+ years of experience</p>
-                                </figcaption>
-                            </figure>
-                            <button class="about-me-btn">Hire Me</button>
-                        </div>
-                    </div>
-                    <div class="skills">
-                        <div class="skill-box">
-                            <span class="title">HTML</span>
-                            <div class="skill-bar">
-                                <span class="skill-per html">
-                                    <span class="tooltip">80%</span>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="skill-box">
-                            <span class="title">CSS</span>
-                            <div class="skill-bar">
-                                <span class="skill-per css">
-                                    <span class="tooltip">80%</span>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="skill-box">
-                            <span class="title">Python</span>
-                            <div class="skill-bar">
-                                <span class="skill-per python">
-                                    <span class="tooltip">70%</span>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="skill-box">
-                            <span class="title">JavaScript</span>
-                            <div class="skill-bar">
-                                <span class="skill-per javascript">
-                                    <span class="tooltip">60%</span>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="skill-box">
-                            <span class="title">PHP</span>
-                            <div class="skill-bar">
-                                <span class="skill-per php">
-                                    <span class="tooltip">50%</span>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!------ Project box ------>
-            <section class="section" id="projects">
-                <div class="top-header">
-                    <h1>Projects</h1>
-                </div>
-                <div class="project-container">
-                    <div class="project-box">
-                        <i class='bx bx-briefcase-alt-2' ></i>
-                        <h3>Completed</h3>
-                        <label>20+ Finished</label>
-                    </div>
-                    <div class="project-box">
-                        <i class='bx bxs-user-plus'></i>
-                        <h3>Client</h3>
-                        <label>70+ Happy client</label>
-                    </div>
-                    <div class="project-box">
-                        <i class='bx bx-award'></i>
-                        <h3>Experience</h3>
-                        <label>2+ Years in web development</label>
-                    </div>
-                </div>
-            </section>
-            <!------ Contact box  ------->
-            <section class="section" id="contact">
-                <div class="top-header">
-                    <h1>Let's Work Together</h1>
-                    <span>Do you have a project in your mind, contact me here</span>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="contact-info">
-                            <h2>Find me <i class="uil uil-corner-right-down"></i></h2>
-                            <p><i class='bx bx-envelope' ></i>Email: <a href="mailto:niyonsengafelicien11@gmail.com">niyonsengafelicien11@gmail.com</a></p>
-                            <p><i class='bx bxs-phone-call' ></i>Phone: <a href="tel:+250782076805">+250 782 076 805</a></p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="form-control">
-                            <div class="form-inputs">
-                                <input type="text" class="input-field" placeholder="Your Name">
-                                <input type="email" class="input-field" placeholder="Your Email">
-                            </div>
-                            <div class="text-area">
-                                <input type="text" class="input-subject" placeholder="Subject">
-                                <textarea placeholder="Message"></textarea>
-                            </div>
-                            <div class="form-button">
-                                <button class="btn">Send <i class='bx bxs-send' ></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <!------ Footer  ------->
-        <footer>
-            <div class="middle-footer">
-                <ul class="footer-menu">
-                    <li class="footer-menu-list">
-                        <a href="#home">Home</a>
-                    </li>
-                    <li class="footer-menu-list">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="footer-menu-list">
-                        <a href="#projects">Project</a>
-                    </li>
-                    <li class="footer-menu-list">
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-social-icons">
-                <div class="icon-circle"></div>
-                <div class="icon"><a aria-label="Instagram" href="#" target="_blank" rel="noopener"><i class='bx bxl-instagram'></i></a></div>
-                <div class="icon"><a aria-label="Facebook" href="#" target="_blank" rel="noopener"><i class='bx bxl-facebook' ></i></a></div>
-                <div class="icon"><a aria-label="LinkedIn" href="https://www.linkedin.com/in/felicien-niyonsenga-a30008299/?original_referer=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2F&originalSubdomain=rw" target="_blank" rel="noopener"><i class='bx bxl-linkedin' ></i></a></div>
-                <div class="icon"><a aria-label="Twitter" href="#" target="_blank" rel="noopener"><i class='bx bxl-twitter' ></i></a></div>
-            </div> 
-            <div class="bottom-footer">
-                <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Keffa</a>- All rights 2023</p>
-            </div>
-        </footer>
+<html lang="en" id="main-html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Felicien Niyonsenga, IT Professional & Software Developer from Rwanda"
+    />
+    <title>Felicien Niyonsenga | IT Professional</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Language Selector -->
+    <div class="language-selector">
+      <button class="lang-btn active" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="rw">Kinyarwanda</button>
     </div>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+
+    <!-- Navigation -->
+    <nav>
+      <div class="nav-brand">
+        <div class="nav-logo">FN</div>
+        <div class="nav-brand-text">
+          <h2>Felicien Niyonsenga</h2>
+          <p>IT Professional</p>
+        </div>
+      </div>
+
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-menu-list">
+          <li class="nav-list">
+            <a href="#home" class="nav-link active-link" data-key="nav.home"
+              >Home</a
+            >
+          </li>
+          <li class="nav-list">
+            <a href="#about" class="nav-link" data-key="nav.about">About</a>
+          </li>
+          <li class="nav-list">
+            <a href="#skills" class="nav-link" data-key="nav.skills">Skills</a>
+          </li>
+          <li class="nav-list">
+            <a href="#projects" class="nav-link" data-key="nav.projects"
+              >Projects</a
+            >
+          </li>
+          <li class="nav-list">
+            <a href="#contact" class="nav-link" data-key="nav.contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-actions">
+        <div class="theme-toggle" id="themeToggle">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+        </div>
+        <div class="mobile-menu-btn" id="mobileMenuBtn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="hero-content">
+        <span class="hero-badge" data-key="hero.badge"
+          >Available for opportunities</span
+        >
+        <h1 class="hero-title" data-key="hero.title">
+          Felicien <span>Niyonsenga</span>
+        </h1>
+        <h2 class="hero-subtitle" data-key="hero.subtitle">
+          IT Professional & Software Developer
+        </h2>
+        <p class="hero-description" data-key="hero.description">
+          Passionate IT specialist with expertise in software development, web
+          applications, and IT infrastructure. Currently pursuing a Diploma in
+          Information Technology with hands-on experience in healthcare IT
+          systems and software solutions.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary" data-key="hero.contactBtn"
+            >Contact Me</a
+          >
+          <button
+            class="btn btn-secondary"
+            id="downloadCV"
+            data-key="hero.downloadBtn"
+          >
+            <i class="fas fa-download"></i> Download CV
+          </button>
+        </div>
+
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/felicien-niyonsenga-a30008299/"
+            target="_blank"
+            class="social-link"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:niyonsengafelicien11@gmail.com" class="social-link">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="tel:+250782076805" class="social-link">
+            <i class="fas fa-phone"></i>
+          </a>
+          <a href="#" class="social-link">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="image-container">
+          <div class="profile-image">
+            <!-- Replace with your actual profile image -->
+            <img src="assets/images/profile.jpg" alt="Felicien Niyonsenga" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-key="about.title">About Me</h2>
+          <p class="section-subtitle" data-key="about.subtitle">
+            Get to know my professional background and journey
+          </p>
+        </div>
+
+        <div class="about-content">
+          <div class="about-card">
+            <div class="card-icon">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+            <h3 data-key="about.educationTitle">Education</h3>
+            <div class="education-item">
+              <h4 data-key="education.diploma">
+                Diploma in Information Technology
+              </h4>
+              <div class="item-date">2023 - 2025</div>
+              <div class="item-location">RP Kigali College</div>
+            </div>
+            <div class="education-item">
+              <h4 data-key="education.advanced">
+                Advanced Level Certificate in Software Development
+              </h4>
+              <div class="item-date">2019 - 2022</div>
+              <div class="item-location">
+                Groupe Scolaire Notre Dame de la Paix Cyanika
+              </div>
+            </div>
+            <div class="education-item">
+              <h4 data-key="education.ordinary">Ordinary Level Certificate</h4>
+              <div class="item-date">2015 - 2017</div>
+              <div class="item-location">G.S Nkumbure</div>
+            </div>
+          </div>
+
+          <div class="about-card">
+            <div class="card-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <h3 data-key="about.experienceTitle">Experience</h3>
+            <div class="experience-item">
+              <h4 data-key="experience.itIntern">IT Intern</h4>
+              <div class="item-date">July 2025 - September 2025</div>
+              <div class="item-location">Muhima District Hospital</div>
+            </div>
+            <div class="experience-item">
+              <h4 data-key="experience.cashier">Cashier</h4>
+              <div class="item-date">November 2024 - July 2025</div>
+              <div class="item-location">Health Center of Muhima</div>
+            </div>
+            <div class="experience-item">
+              <h4 data-key="experience.dataEntry">Data Entry Specialist</h4>
+              <div class="item-date">November 2023 - February 2024</div>
+              <div class="item-location">Health Center of Muhima</div>
+            </div>
+          </div>
+
+          <div class="about-card">
+            <div class="card-icon">
+              <i class="fas fa-info-circle"></i>
+            </div>
+            <h3 data-key="about.personalTitle">Professional Information</h3>
+            <ul class="info-list">
+              <li class="info-item">
+                <span class="info-label" data-key="info.location"
+                  >Location</span
+                >
+                <span class="info-value">Kigali City, Rwanda</span>
+              </li>
+              <li class="info-item">
+                <span class="info-label" data-key="info.status">Status</span>
+                <span class="info-value" data-key="info.statusValue"
+                  >Available for opportunities</span
+                >
+              </li>
+              <li class="info-item">
+                <span class="info-label" data-key="info.certifications"
+                  >Certifications</span
+                >
+                <span class="info-value"
+                  >HTML & CSS, JavaScript, Intermediate English</span
+                >
+              </li>
+              <li class="info-item">
+                <span class="info-label" data-key="info.languages"
+                  >Languages</span
+                >
+                <span class="info-value"
+                  >Kinyarwanda (Native), English (Fluent), French (Basic)</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-key="skills.title">
+            Technical Skills
+          </h2>
+          <p class="section-subtitle" data-key="skills.subtitle">
+            My expertise across various domains of IT and development
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3 data-key="skills.programming">Programming Languages</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Python</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 data-key="skills.web">Web Development</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">PHP</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 data-key="skills.app">Application Development</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Mobile Apps (Java)</span>
+              <span class="skill-tag">Desktop Apps (Java)</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 data-key="skills.database">Database & Systems</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Database Design</span>
+              <span class="skill-tag">Computer Networking</span>
+              <span class="skill-tag">Microsoft Office</span>
+              <span class="skill-tag">System Maintenance</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 data-key="skills.soft">Core Competencies</h3>
+            <div class="skill-tags">
+              <span class="skill-tag" data-key="skills.leadership"
+                >Leadership</span
+              >
+              <span class="skill-tag" data-key="skills.communication"
+                >Communication</span
+              >
+              <span class="skill-tag" data-key="skills.problem"
+                >Problem Solving</span
+              >
+              <span class="skill-tag" data-key="skills.teamwork">Teamwork</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-key="projects.title">
+            Projects & Experience
+          </h2>
+          <p class="section-subtitle" data-key="projects.subtitle">
+            Highlighting my key projects and professional work
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="project-content">
+              <h3 data-key="projects.webTitle">Web Application Development</h3>
+              <p data-key="projects.webDesc">
+                Developed dynamic web applications using PHP during internship
+                at SALTEL Company, creating business solutions with team
+                collaboration.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">HTML/CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <i class="fas fa-hospital"></i>
+            </div>
+            <div class="project-content">
+              <h3 data-key="projects.healthIT">Healthcare IT Systems</h3>
+              <p data-key="projects.healthITDesc">
+                Supported IT operations at Muhima District Hospital, assisting
+                with system implementation, maintenance, and technical
+                troubleshooting.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">IT Support</span>
+                <span class="tech-tag">System Maintenance</span>
+                <span class="tech-tag">Troubleshooting</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <i class="fas fa-database"></i>
+            </div>
+            <div class="project-content">
+              <h3 data-key="projects.data">Health Data Management</h3>
+              <p data-key="projects.dataDesc">
+                Managed patient data entry and maintained accurate records in
+                health information systems at Health Center of Muhima.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Data Entry</span>
+                <span class="tech-tag">Record Management</span>
+                <span class="tech-tag">Confidentiality</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-key="contact.title">Get In Touch</h2>
+          <p class="section-subtitle" data-key="contact.subtitle">
+            Feel free to reach out for collaborations or opportunities
+          </p>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3 data-key="contact.infoTitle">Contact Information</h3>
+            <div class="contact-details">
+              <div class="contact-detail">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-text">
+                  <h4 data-key="contact.phone">Phone</h4>
+                  <p><a href="tel:+250782076805">+250 782 076 805</a></p>
+                  <p><a href="tel:+250734525852">+250 734 525 852</a></p>
+                </div>
+              </div>
+
+              <div class="contact-detail">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-text">
+                  <h4 data-key="contact.email">Email</h4>
+                  <p>
+                    <a href="mailto:niyonsengafelicien11@gmail.com"
+                      >niyonsengafelicien11@gmail.com</a
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-detail">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-text">
+                  <h4 data-key="contact.location">Location</h4>
+                  <p>Kigali City, Nyarugenge District, Rwanda</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/felicien-niyonsenga-a30008299/"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="mailto:niyonsengafelicien11@gmail.com"
+                class="social-link"
+              >
+                <i class="fas fa-envelope"></i>
+              </a>
+              <a href="tel:+250782076805" class="social-link">
+                <i class="fas fa-phone"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <h3 data-key="contact.formTitle">Send Message</h3>
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name" data-key="contact.name">Your Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email" data-key="contact.email"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="subject" data-key="contact.subject">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  class="form-control"
+                  placeholder="Subject of your message"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message" data-key="contact.message">Message</label>
+                <textarea
+                  id="message"
+                  class="form-control"
+                  placeholder="Write your message here..."
+                  required
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="btn btn-primary"
+                data-key="contact.sendBtn"
+              >
+                Send Message <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Download CV Button -->
+        <div class="download-cv">
+          <button class="btn-download" id="downloadCVBottom">
+            <i class="fas fa-download"></i>
+            <span data-key="contact.downloadCV"
+              >Download Complete CV (PDF)</span
+            >
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-about">
+            <div class="footer-logo">
+              <div class="footer-logo-circle">FN</div>
+              <div class="footer-logo-text">
+                <h3>Felicien Niyonsenga</h3>
+                <p>IT Professional & Developer</p>
+              </div>
+            </div>
+            <p data-key="footer.description">
+              Passionate IT specialist creating innovative solutions with modern
+              technologies.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <h4 data-key="footer.quickLinks">Quick Links</h4>
+            <ul>
+              <li><a href="#home" data-key="nav.home">Home</a></li>
+              <li><a href="#about" data-key="nav.about">About</a></li>
+              <li><a href="#skills" data-key="nav.skills">Skills</a></li>
+              <li><a href="#projects" data-key="nav.projects">Projects</a></li>
+              <li><a href="#contact" data-key="nav.contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4 data-key="footer.contact">Contact Info</h4>
+            <p><i class="fas fa-map-marker-alt"></i> Kigali City, Rwanda</p>
+            <p><i class="fas fa-phone"></i> +250 782 076 805</p>
+            <p>
+              <i class="fas fa-envelope"></i> niyonsengafelicien11@gmail.com
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p data-key="footer.copyright">
+            © 2023 Felicien Niyonsenga. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="translations.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
